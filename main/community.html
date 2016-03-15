@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>黄石港区统战服务对象管理系统</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="community.css">
+    <script type="text/javascript">
+        function displaySubMenu(li) {
+            var subMenu = li.getElementsByTagName("ul")[0];
+            subMenu.style.display = "block";
+        }
+        function hideSubMenu(li) {
+            var subMenu = li.getElementsByTagName("ul")[0];
+            subMenu.style.display = "none";
+        }
+    </script>
+
+</head>
+<body>
+<nav class="navbar " role="navigation">   <!--header-->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">个人主页</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right " id="mytab">
+                <li ><a href="#">批量增加</a></li>
+                <li><a href="#">批量处理</a></li>
+                <li><a href="#">操作记录</a></li>
+            </ul>
+            <form class="navbar-form form-inline " role="form">
+                <div class="form-group">
+                    <label>用户：</label>
+                    <lable class="form-control">黄石港区统战部</lable>
+                </div>
+                <div class="form-group">
+                    <label>统战服务对象：</label>
+                    <lable  class="form-control" >全区</lable>
+                </div>
+            </form>
+        </div>
+    </div>
+    </nav>
+<div class="container">
+    <div id="carousel1" class="carousel slide">        <!--图片轮播-->
+        <ol class="carousel-indicators">
+            <li data-toggle="#carousel1" data-slide-to="0" class="active"></li>
+            <li data-toggle="#carousel1" data-slide-to="1"></li>
+            <li data-toggle="#carousel1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="ch5.jpg" style="width: 1140px;height: 380px">
+            </div>
+            <div class="item ">
+                <img src="ch4.jpg" style="width: 1140px;height: 380px">
+            </div>
+            <div class="item">
+                <img src="ch3.jpg" style="width: 1140px;height: 380px">
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel1" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <div class="nav">
+        <ul id="navigation">
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">江北管理区</a>
+                <ul>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">江北社区</a>
+                    </li>
+                </ul>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">花湖街道办事处</a>
+                <ul>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">天方社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">天虹社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">大码头社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">老虎头社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">锁前社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">花湖社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">黄石港片区管理委员会</a>
+                <ul>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">青山湖社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">延安岭社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">黄石港社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">黄印村社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">大桥社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">新闸社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">纺织社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">环磁湖片区管理委员会</a>
+                <ul>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">覆盆山社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">桂花湾社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">楠竹林社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">凤凰山社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">师院社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">沈家营社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">南岳社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">观海山社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">亚光社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">市建村社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">红旗桥社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">王家里社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">胜阳港片区管理委员会</a>
+                <ul>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">钟楼社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">文化宫社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">南京路社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">胜阳港社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">天桥社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                        <a href="#">湖滨路社区</a>
+                        <ul>
+                            <li><a href="#">第一网络</a></li>
+                            <li><a href="#">第二网络</a></li>
+                            <li><a href="#">第三网络</a></li>
+                            <li><a href="#">第四网络</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="section">
+        <form  class="form-inline" role="form ">
+            <div class="form-group">
+                <label><span>统战服务对象：</span></label>
+
+               <select class="form-control">
+                    <option>民主党派成员</option><option>无党派人士</option><option>党外知识分子</option>
+                    <option>宗教人士</option><option>少数民族流动</option><option>少数民族常住</option>
+                    <option>非公有制经济人士</option><option>新的社会阶层人士</option><option>出国和归国留学人士</option>
+                    <option>港澳同胞（家属）</option><option>台湾同胞及其在大陆亲属</option><option>华侨、归侨及侨眷</option>
+                    <option>其他联系对象</option>
+                </select>
+            </div>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="form-group">
+                <label><span>关键字查询:</span></label>
+                <select class="form-control">
+                    <option>身份证号</option><option>姓名</option><option>工作单位</option>
+                </select>
+                <input type="text" class="form-control" placeholder="搜索">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button  type="button" class="btn " style="background-color:rgba(27,106,170,0.6)" value="查询">查询</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <table class="table  table-striped table-bordered   table-hover" >
+        <thead>
+        <tr class="info">
+            <th>表格标题</th>
+            <th>表格标题</th>
+            <th>表格标题</th>
+            <th>表格标题</th>
+            <th>表格标题</th>
+            <th>表格标题</th>
+            <th><a href="#">管理</a></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr >
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td><a href="#">管理</a></td>
+        </tr>
+        <tr class="info">
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td><a href="#">管理</a></td>
+        </tr>
+        <tr >
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td><a href="#">管理</a></td>
+        </tr>
+        <tr class="info">
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td><a href="#">管理</a></td>
+        </tr>
+        <tr >
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td><a href="#">管理</a></td>
+        </tr>
+        <tr class="info">
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td><a href="#">管理</a></td>
+        </tr>
+        <tr >
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td><a href="#">管理</a></td>
+        </tr>
+        <tr class="info">
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td><a href="#">管理</a></td>
+        </tr>
+        <tr >
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td><a href="#">管理</a></td>
+        </tr>
+        <tr class="info">
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td><a href="#">管理</a></td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+<footer>
+    <p>公司简介|广告服务|联系我们|招聘信息|网站律师|产品答疑</p>
+    <span>Copyrihht @1994-2015 XX Corporation, All Rigths Reserved </span>
+</footer>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+<script>
+    $("#carousel1").carousel({
+        interval:4000   /*不能加分号*/
+    })
+</script>
+</body>
+</html>
